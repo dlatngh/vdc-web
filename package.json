@@ -12,7 +12,7 @@
     "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
-    "postinstall": "prisma generate && patch-package && drizzle-kit generate"
+    "postinstall": "patch-package && drizzle-kit generate"
   },
   "dependencies": {
     "@auth/core": "^0.39.0",

@@ -1,7 +1,7 @@
 import StandingsPanel from "@/components/standings/StandingsPanel";
 import TabSelector from "@/components/tabs/TabSelector";
+import { Tier } from "@/lib/tier";
 import React from "react";
-import { Tier } from "@prisma/client";
 
 export type StandingsTab = {
   tier: string;

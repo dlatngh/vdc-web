@@ -1,6 +1,6 @@
 import { StandingsTab } from "@/app/standings/page";
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
-import { ControlPanel } from "@/prisma";
+
 import React from "react";
 import { cache } from "@/lib/cache";
 
@@ -12,7 +12,7 @@ export default async function TabSelector(props: {
     season = cache.currentSeason;
     console.log("cache hit for season:", season);
   } else {
-    season = await ControlPanel.getSeason();
+    season = 8;
     cache.currentSeason = season;
   }
 
