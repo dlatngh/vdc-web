@@ -69,7 +69,7 @@
 //         losses,
 //         rwp,
 //         franchiseSlug: f.slug,
-//       };
+//       }; 
 //     })
 //     // 4) sort by RWP first, then by total wins
 //     .sort((a, b) => (b.rwp === a.rwp ? b.wins - a.wins : b.rwp - a.rwp));

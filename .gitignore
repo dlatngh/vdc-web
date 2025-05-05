@@ -42,3 +42,8 @@ next-env.d.ts
 # wrangler files
 .wrangler
 .dev.vars*
+
+# amplify
+.amplify
+amplify_outputs*
+amplifyconfiguration*
