@@ -1,5 +1,4 @@
 import { DISCORD_LINK } from "@/lib/constants";
-import { getFaq } from "@/lib/queries/about";
 import {
   Disclosure,
   DisclosureButton,
@@ -10,8 +9,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default async function Page() {
-  const faqs = await getFaq();
-
+  const res = await fetch(`${process.env.URL}/api/faq`);
+  const faqs = await res.json();
   return (
     <div>
       <div className="mx-auto max-w-7xl pb-10 xl:px-8 xl:py-12">
